@@ -4,6 +4,7 @@ resources:
   - ../../base
   # llama-serve resources
   - ../../../llama-serve/llama3.2-3b
+  - ../../../llama-serve/granite-8b
   - ../../../mcp-servers/slack-mcp
 
 patchesStrategicMerge:
