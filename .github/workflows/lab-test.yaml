@@ -45,7 +45,7 @@ jobs:
 
       - name: create slack secret
         run: |
-          oc create secret generic slack-secret --from-literal=slack-team-id=${{ secrets.SLACK_TEAM_ID }} --from-literal=slack-bot-token=${{ secrets.SLACK_BOT_TOKEN }} -n lab-test
+          oc create secret generic slack-secret --from-literal=slack-team-id=${{ secrets.SLACK_TEAM_ID }} --from-literal=llama-token=${{ secrets.LLAMA_TOKEN }} --from-literal=slack-bot-token=${{ secrets.SLACK_BOT_TOKEN }}  -n lab-test
 
       - name: deploy components
         run: |
