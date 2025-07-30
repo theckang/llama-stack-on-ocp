@@ -53,10 +53,6 @@ spec:
                 secretKeyRef:
                   name: slack-secret
                   key: llama-token
-            - name: GRANITE_URL
-              value: 'https://granite32-8b.llama-serve.svc.cluster.local/v1'
-            - name: GRANITE_MODEL
-              value: granite32-8b
             - name: VLLM_API_TOKEN
               value: fake
             - name: CUSTOM_TIKTOKEN_CACHE_DIR
