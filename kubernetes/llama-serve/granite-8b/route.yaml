@@ -1,0 +1,10 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  annotations:
+    haproxy.router.openshift.io/timeout: 30s
+  labels:
+    app.kubernetes.io/instance: llama-stack-on-ocp
+    opendatahub.io/dashboard: 'true'
+  name: granite32-8b-llama-serve
+  namespace: istio-system
