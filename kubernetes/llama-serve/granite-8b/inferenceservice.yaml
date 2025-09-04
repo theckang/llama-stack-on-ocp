@@ -10,6 +10,7 @@ metadata:
   name: granite32-8b
   finalizers:
     - inferenceservice.finalizers
+    - odh.inferenceservice.finalizers    
   labels:
     opendatahub.io/dashboard: 'true'
 spec:
